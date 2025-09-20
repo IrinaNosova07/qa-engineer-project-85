@@ -1,0 +1,1024 @@
+РЕГИСТРАЦИЯ
+
+- summary: |
+    Проверка работы кнопки "Sign up" на главной странице сайта
+  requirement: |
+    Пользователь должен иметь возможность регистрации на сайте
+  prerequisites:
+    Открыта главная страница сайта https://codebattle.hexlet.io/ (Current version: 68f356b)
+  test-data: |
+    Нет данных
+  steps:
+    - Нажимаем на кнопку "Sign up"
+  expected-result: |
+    Открыта страница регистрации
+
+- summary: |
+    Проверка ошибки регистрации пользователя с уже существующими Nickname
+  requirement: |
+    Пользователь должен иметь возможность регистрации на сайте
+  prerequisites:
+    Открыта страница регистрации сайта https://codebattle.hexlet.io/users/new?locale=en&next=%2F (Current version: 68f356b)
+  test-data: |
+    Nickname = chameleon Email = Gok@mail.ru Password = ghbdtnvbh@ Password Confirmation = ghbdtnvbh@ 
+  steps:
+    - Вводим Nickname
+    - Вводим Email
+    - Вводим Password
+    - Вводим Password Confirmation
+    - Нажимаем кнопку «Submit»
+  expected-result: |
+    Пользователь должен получить сообщение об ошибке
+
+- summary: |
+    Проверка ошибки регистрации пользователя с неправильным Email
+  requirement: |
+    Пользователь должен иметь возможность регистрации на сайте
+  prerequisites:
+    Открыта страница регистрации сайта https://codebattle.hexlet.io/users/new?locale=en&next=%2F (Current version: 68f356b)
+  test-data: |
+    Nickname = chameleon Email = Gokаdjon Password = парапапапа! Password Confirmation = парапапапа! 
+  steps:
+    - Вводим Nickname
+    - Вводим Email
+    - Вводим Password
+    - Вводим Password Confirmation
+    - Нажимаем кнопку «Submit»
+  expected-result: |
+    Пользователь должен получить сообщение об ошибке
+
+- summary: |
+    Проверка ошибки регистрации пользователя с уже зарегистрированным Email
+  requirement: |
+    Пользователь должен иметь возможность регистрации на сайте
+  prerequisites:
+    Открыта страница регистрации сайта https://codebattle.hexlet.io/users/new?locale=en&next=%2F (Current version: 68f356b)
+  test-data: |
+    Nickname = zombizorro Email = Ir4en-i@mail.ru Password = ghdjbbsukkkkdk@ Password Confirmation = ghdjbbsukkkkdk@
+  steps:
+    - Вводим Nickname
+    - Вводим Email
+    - Вводим Password
+    - Вводим Password Confirmation
+    - Нажимаем кнопку «Submit»
+  expected-result: |
+    Пользователь должен получить сообщение об ошибке
+
+- summary: |
+    Проверка ошибки регистрации пользователя с неправильным Password
+  requirement: |
+    Пользователь должен иметь возможность регистрации на сайте
+  prerequisites:
+    Открыта страница регистрации сайта https://codebattle.hexlet.io/users/new?locale=en&next=%2F (Current version: 68f356b)
+  test-data: |
+    Nickname = chameleon Email = Ir4en-i@mail.ru Password = парапапапа Password Confirmation = парапапапа
+  steps:
+    - Вводим Nickname
+    - Вводим Email
+    - Вводим Password
+    - Вводим Password Confirmation
+    - Нажимаем кнопку «Submit»
+  expected-result: |
+    Пользователь должен получить сообщение об ошибке
+
+- summary: |
+    Проверка ошибки регистрации пользователя с Password Confirmation отличным от Password
+  requirement: |
+    Пользователь должен иметь возможность регистрации на сайте
+  prerequisites:
+    Открыта страница регистрации сайта https://codebattle.hexlet.io/users/new?locale=en&next=%2F (Current version: 68f356b)
+  test-data: |
+    Nickname = chameleon Email = Ir4en-i@mail.ru Password = парапапапа! Password Confirmation = парапапапа@
+  steps:
+    - Вводим Nickname
+    - Вводим Email
+    - Вводим Password
+    - Вводим Password Confirmation
+    - Нажимаем кнопку «Submit»
+  expected-result: |
+    Пользователь должен получить сообщение об ошибке
+
+- summary: |
+    Проверка успешной регистрации пользователя
+  requirement: |
+    Пользователь должен иметь возможность регистрации на сайте
+  prerequisites:
+    Открыта страница регистрации сайта https://codebattle.hexlet.io/users/new?locale=en&next=%2F (Current version: 68f356b)
+  test-data: |
+    Nickname = chameleon Email = Ir4en-i@mail.ru Password = парапапапа! Password Confirmation = парапапапа!
+  steps:
+    - Вводим Nickname
+    - Вводим Email
+    - Вводим Password
+    - Вводим Password Confirmation
+    - Нажимаем кнопку «Submit»
+  expected-result: |
+    Пользователь зарегистрирован
+
+- summary: |
+    Проверка работы кнопки "Sign up with Github" на странице авторизации
+  requirement: |
+    Пользователь должен иметь возможность авторизации на сайте
+  prerequisites:
+    Открыта страница авторизации сайта https://codebattle.hexlet.io/session/new?locale=en&next=%2F (Current version: 68f356b)
+  test-data: |
+    Нет данных
+  steps:
+    - Нажимаем на кнопку "Sign up with Github"
+  expected-result: |
+    Открыта страница авторизации в GitHub 
+
+- summary: |
+    Проверка работы кнопки "Sign up with Discord" на странице авторизации
+  requirement: |
+    Пользователь должен иметь возможность авторизации на сайте
+  prerequisites:
+    Открыта страница авторизации сайта https://codebattle.hexlet.io/session/new?locale=en&next=%2F (Current version: 68f356b)
+  test-data: |
+    Нет данных
+  steps:
+    - Нажимаем на кнопку "Sign up with Discord"
+  expected-result: |
+    Открыта страница авторизации в Discord
+
+- summary: |
+    Проверка работы кнопки "Sing in" на главной странице сайта
+  requirement: |
+    Пользователь должен иметь возможность авторизации на сайте
+  prerequisites:
+    Открыта главная страница сайта https://codebattle.hexlet.io/ (Current version: 68f356b)
+  test-data: |
+    Нет данных
+  steps:
+    - Нажимаем на кнопку "Sign in"
+  expected-result: |
+    Открыта страница авторизации
+
+- summary: |
+    Проверка ошибки авторизации пользователя с неправильным Email
+  requirement: |
+    Пользователь должен иметь возможность авторизации на сайте
+  prerequisites:
+    Открыта страница авторизации сайта https://codebattle.hexlet.io/session/new?locale=en&next=%2F (Current version: 68f356b)
+  test-data: |
+    Email = Gok@mail.ru Password = парапапапа!
+  steps:
+    - Вводим Email
+    - Вводим Password
+    - Нажимаем кнопку «Submit»
+  expected-result: |
+    Пользователь должен получить сообщение об ошибке
+
+- summary: |
+    Проверка ошибки авторизации пользователя с неправильным Password
+  requirement: |
+    Пользователь должен иметь возможность авторизации на сайте
+  prerequisites:
+    Открыта страница авторизации сайта https://codebattle.hexlet.io/session/new?locale=en&next=%2F (Current version: 68f356b)
+  test-data: |
+    Email = Ir4en-i@mail.ru Password = парапапапа@
+  steps:
+    - Вводим Email
+    - Вводим Password
+    - Нажимаем кнопку «Submit»
+  expected-result: |
+    Пользователь должен получить сообщение об ошибке
+
+- summary: |
+    Проверка успешной авторизации пользователя
+  requirement: |
+    Пользователь должен иметь возможность авторизации на сайте
+  prerequisites:
+    Открыта страница авторизации сайта https://codebattle.hexlet.io/session/new?locale=en&next=%2F (Current version: 68f356b)
+  test-data: |
+    Email = Ir4en-i@mail.ru Password = парапапапа!
+  steps:
+    - Вводим Email
+    - Вводим Password
+    - Нажимаем кнопку «Submit»
+  expected-result: |
+    Пользователь авторизован
+
+- summary: |
+    Проверка работы кнопки "Sign in with Github" на странице авторизации (при наличии аккаунта)
+  requirement: |
+    Пользователь должен иметь возможность авторизации на сайте
+  prerequisites:
+    Открыта страница авторизации сайта https://codebattle.hexlet.io/session/new?locale=en&next=%2F (Current version: 68f356b)
+  test-data: |
+    Нет данных
+  steps:
+    - Нажимаем на кнопку "Sign in with Github"
+  expected-result: |
+    Выполнена авторизация на Codebattle 
+
+- summary: |
+    Проверка работы кнопки "Sign in with Discord" на странице авторизации (при наличии аккаунта)
+  requirement: |
+    Пользователь должен иметь возможность авторизации на сайте
+  prerequisites:
+    Открыта страница авторизации сайта https://codebattle.hexlet.io/session/new?locale=en&next=%2F (Current version: 68f356b)
+  test-data: |
+    Нет данных
+  steps:
+    - Нажимаем на кнопку "Sign in with Discord"
+  expected-result: |
+    Выполнена авторизация на Codebattle 
+
+- summary: |
+    Проверка работы логотипа профиля игрока
+  requirement: |
+    При нажатии на логотип профиля игрока в меню сайта должен появиться выпадающий список
+  prerequisites:
+    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby (Current version: 68f356b)
+  test-data: |
+    Нет данных
+  steps:
+    - Нажимаем на логотип профиля игрока в правом верхнем углу меню
+  expected-result: |
+    Появляется выпадающий список
+
+- summary: |
+    Проверка работы "My Profile" в выпадающем списке
+  requirement: |
+    Сайт должен быть разработан с учетом удобства использования
+  prerequisites:
+    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby (Current version: 68f356b)
+  test-data: |
+    Нет данных
+  steps:
+    - Нажимаем на логотип профиля игрока в правом верхнем углу меню
+    - В выпадающем списке выбираем "My Profile"
+  expected-result: |
+    Открыта страница с профилем игрока
+
+- summary: |
+    Проверка возможности перехода на вкладку "COMPLETED GAMES" в "My Profile" выпадающего списка(при выбранной "STATISTICS")  
+  requirement: |
+    Сайт должен быть разработан с учетом удобства использования 
+  prerequisites:
+    Пользователь авторизован. Открыта страница "My Profile" сайта https://codebattle.hexlet.io/users/19574 (Current version: 68f356b). Выбрана вкладка "STATISTICS".
+  test-data: |
+    Нет данных
+  steps:
+    - Нажимаем на "COMPLETED GAMES"
+  expected-result: |
+    Открыта вкладка с завершенными играми
+
+- summary: |
+    Проверка возможности перехода на вкладку "STATISTICS" в "My Profile" выпадающего списка (при выбранной "COMPLETED GAMES")  
+  requirement: |
+    Сайт должен быть разработан с учетом удобства использования
+  prerequisites:
+    Пользователь авторизован. Открыта страница "My Profile" сайта https://codebattle.hexlet.io/users/19574 (Current version: 68f356b). Выбрана вкладка "COMPLETED GAMES".
+  test-data: |
+    Нет данных
+  steps:
+    - Нажимаем на "COMPLETED GAMES"
+  expected-result: |
+    Открыта вкладка с завершенными играми
+
+- summary: |
+    Проверка работы "Settings" в выпадающем списке
+  requirement: |
+    Сайт должен быть разработан с учетом удобства использования
+  prerequisites:
+    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby (Current version: 68f356b)
+  test-data: |
+    Нет данных
+  steps:
+    - Нажимаем на логотип профиля игрока в правом верхнем углу меню
+    - В выпадающем списке выбираем "Settings"
+  expected-result: |
+    Открыта страница "Settings" с текущими настройками
+
+- summary: |
+    Проверка работы "Users rating" в выпадающем списке
+  requirement: |
+    Сайт должен быть разработан с учетом удобства использования
+  prerequisites:
+    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby (Current version: 68f356b)
+  test-data: |
+    Нет данных
+  steps:
+    - Нажимаем на логотип профиля игрока в правом верхнем углу меню
+    - В выпадающем списке выбираем "Users rating"
+  expected-result: |
+    Открыта таблица "Users rating" с актуальными рейтингом игроков
+
+- summary: |
+    Проверка работы "Tournaments" в выпадающем списке
+  requirement: |
+    Сайт должен быть разработан с учетом удобства использования
+  prerequisites:
+    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby (Current version: 68f356b)
+  test-data: |
+    Нет данных
+  steps:
+    - Нажимаем на логотип профиля игрока в правом верхнем углу меню
+    - В выпадающем списке выбираем "Tournaments"
+  expected-result: |
+    Открыта таблица "Tournaments" с актуальными турнирами игры
+
+- summary: |
+    Проверка работы кнопки "Show" в таблице "Tournaments"
+  requirement: |
+    Сайт должен быть разработан с учетом удобства использования
+  prerequisites:
+    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby (Current version: 68f356b)
+  test-data: |
+    Нет данных
+  steps:
+    - Нажимаем на логотип профиля игрока в правом верхнем углу меню
+    - В выпадающем списке выбираем "Tournaments"
+    - В поле actions нажимаем "Show" у любого турнира
+  expected-result: |
+    Отображаются информация и возможные действия касательно выбранного турнира
+
+- summary: |
+    Проверка работы "Tasks" в выпадающем списке
+  requirement: |
+    Сайт должен быть разработан с учетом удобства использования
+  prerequisites:
+    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby (Current version: 68f356b)
+  test-data: |
+    Нет данных
+  steps:
+    - Нажимаем на логотип профиля игрока в правом верхнем углу меню
+    - В выпадающем списке выбираем "Tasks"
+  expected-result: |
+    Открыта таблица "Tasks" с актуальными задачами игры
+
+- summary: |
+    Проверка работы кнопки "Show" в таблице Tasks
+  requirement: |
+    Сайт должен быть разработан с учетом удобства использования
+  prerequisites:
+    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby (Current version: 68f356b)
+  test-data: |
+    Нет данных
+  steps:
+    - Нажимаем на логотип профиля игрока в правом верхнем углу меню
+    - В выпадающем списке выбираем "Tasks"
+    - В поле actions нажимаем "Show" у любой задачи
+  expected-result: |
+    Отображаются условие и информация о конкретной задаче игры
+
+- summary: |
+    Проверка работы кнопки "Create new task" в Tasks
+  requirement: |
+    Сайт должен быть разработан с учетом удобства использования
+  prerequisites:
+    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby (Current version: 68f356b)
+  test-data: |
+    Нет данных
+  steps:
+    - Нажимаем на логотип профиля игрока в правом верхнем углу меню
+    - В выпадающем списке выбираем "Tasks"
+    - Нажимаем зеленую кнопку "Create new task"
+  expected-result: |
+    Открывается страница с формой для самостоятельного создания новой задачи
+
+- summary: |
+    Проверка работы кнопки "Task packs" в "Tasks"
+  requirement: |
+    Сайт должен быть разработан с учетом удобства использования
+  prerequisites:
+    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby (Current version: 68f356b)
+  test-data: |
+    Нет данных
+  steps:
+    - Нажимаем на логотип профиля игрока в правом верхнем углу меню
+    - В выпадающем списке выбираем "Tasks"
+    - Нажимаем синюю кнопку "Task packs"
+  expected-result: |
+    Открывается страница с таблицей "Tasks packs"
+
+- summary: |
+    Проверка работы "Clans" в выпадающем списке
+  requirement: |
+    Сайт должен быть разработан с учетом удобства использования
+  prerequisites:
+    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby (Current version: 68f356b)
+  test-data: |
+    Нет данных
+  steps:
+    - Нажимаем на логотип профиля игрока в правом верхнем углу меню
+    - В выпадающем списке выбираем "Clans"
+  expected-result: |
+    Открыта таблица с командами игроков - "Clans"
+
+- summary: |
+    Проверка работы кнопки "Show" в таблице "Clans"
+  requirement: |
+    Сайт должен быть разработан с учетом удобства использования
+  prerequisites:
+    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby (Current version: 68f356b)
+  test-data: |
+    Нет данных
+  steps:
+    - Нажимаем на логотип профиля игрока в правом верхнем углу меню
+    - В выпадающем списке выбираем "Clans"
+    - В поле actions нажимаем "Show" у любой команды
+  expected-result: |
+    Отображается подробная информация о выбранной команде (Clan Details, Creator, Clan Members)
+
+- summary: |
+    Проверка работы "SourceCode" в выпадающем списке
+  requirement: |
+    Сайт должен быть разработан с учетом удобства использования
+  prerequisites:
+    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby (Current version: 68f356b)
+  test-data: |
+    Нет данных
+  steps:
+    - Нажимаем на логотип профиля игрока в правом верхнем углу меню
+    - В выпадающем списке выбираем "SourceCode"
+  expected-result: |
+    Выполнен переход на страницу GitHub. Открыт репозиторий с commit указанной версии сайта
+
+- summary: |
+    Проверка работы "Hexlet" в выпадающем списке
+  requirement: |
+    Сайт должен быть разработан с учетом удобства использования
+  prerequisites:
+    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby (Current version: 68f356b)
+  test-data: |
+    Нет данных
+  steps:
+    - Нажимаем на логотип профиля игрока в правом верхнем углу меню
+    - В выпадающем списке выбираем "Hexlet"
+  expected-result: |
+    Выполнен переход на главную страницу сайта Hexlet
+
+- summary: |
+    Проверка работы "Join Discord" в выпадающем списке
+  requirement: |
+    Сайт должен быть разработан с учетом удобства использования
+  prerequisites:
+    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby (Current version: 68f356b)
+  test-data: |
+    Нет данных
+  steps:
+    - Нажимаем на логотип профиля игрока в правом верхнем углу меню
+    - В выпадающем списке выбираем "Join Discord"
+  expected-result: |
+    Выполнен переход на главную страницу сайта Discord
+
+- summary: |
+    Проверка работы "Tg#codebattle" в выпадающем списке
+  requirement: |
+    Сайт должен быть разработан с учетом удобства использования
+  prerequisites:
+    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby (Current version: 68f356b)
+  test-data: |
+    Нет данных
+  steps:
+    - Нажимаем на логотип профиля игрока в правом верхнем углу меню
+    - В выпадающем списке выбираем "Tg#codebattle"
+  expected-result: |
+    Выполнен переход на страницу Telegram канала "Хекслет Сообщество"
+
+- summary: |
+    Проверка работы "Sing Out" в выпадающем списке
+  requirement: |
+    Сайт должен быть разработан с учетом удобства использования 
+  prerequisites:
+    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby (Current version: 68f356b)
+  test-data: |
+    Нет данных
+  steps:
+    - Нажимаем на логотип профиля игрока в правом верхнем углу меню
+    - В выпадающем списке выбираем "Sing Out"
+  expected-result: |
+    Осуществлен выход из профиля. Открыта стартовая страница сайта
+
+- summary: |
+    Проверка работы логотипа игры в меню сайта
+  requirement: |
+    Сайт должен быть разработан с учетом удобства использования
+  prerequisites:
+    Пользователь авторизован. Открыт "My Profile" https://codebattle.hexlet.io/users/19574 (Current version: 68f356b)
+  test-data: |
+    Нет данных
+  steps:
+    - Нажимаем на логотип игры в меню сайта
+  expected-result: |
+    Открыта главная страница сайта
+
+- summary: |
+    Проверка работы ссылки "Star us" в меню сайта
+  requirement: |
+    Сайт должен быть разработан с учетом удобства использования
+  prerequisites:
+    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby (Current version: 68f356b)
+  test-data: |
+    Нет данных
+  steps:
+    - Нажимаем на ссылку "Star us" в меню сайта
+  expected-result: |
+    Выполнен переход на страницу GitHub. Открыт репозиторий с commit указанной версии сайта
+
+- summary: |
+    Проверка работы кнопки "CREATE A GAME" главной странницы сайта
+  requirement: |
+    Пользователь должен иметь возможность создавать новую игру с самостоятельно заданными параметрами
+  prerequisites:
+   Пользователь должен иметь возможность выбрать игру по уровню сложности. При создании игры можно выбрать определенную игру, иначе она будет подобрана наугад
+  test-data: |
+    Нет данных
+  steps:
+    - Нажимаем на зеленую кнопку "CREATE A GAME"
+  expected-result: |
+    Открыто модальное окно "Create a game" для выбора параметров и создания новой игры
+
+- summary: |
+    Проверка работы кнопки "Create battle" с параметрами игры заданными по умолчанию
+  requirement: |
+    При создании игры можно выбрать определенную игру, иначе она будет подобрана наугад
+  prerequisites:
+    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby (Current version: 68f356b)
+  test-data: 
+    Нет данных
+  steps:
+    - Нажимаем на зеленую кнопку "CREATE A GAME"
+    - Нажимаем кнопку "Create battle"  
+  expected-result: |
+    В "LOBBY" появляется новая строка с игрой
+
+- summary: |
+    Проверка работы кнопки "Create battle" при самостоятельно заданных параметрах игры
+  requirement: |
+    Пользователь должен иметь возможность выбрать игру по уровню сложности
+  prerequisites:
+    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby (Current version: 68f356b)
+  test-data: |
+    Нет данных
+  steps:
+    - Нажимаем на зеленую кнопку "CREATE A GAME"
+    - Выбираем "level" 2 звезды
+    - Выбираем "Game Type" "with a bot"
+    - Устанавливаем "Time control" на "60 min"
+    - В выпадающем списке "Choose task by name or tags" выбираем "base_n"
+    - Нажимаем кнопку "Create battle"
+  expected-result: |
+    Открывается выбранная игра
+
+- summary: |
+    Проверка перехода на вкладку "OUTPUT" в игре (при открытой "TASK")
+  requirement: |
+    Оба игрока должны иметь возможность видеть друг у друга редактор с кодом, вывод тестов
+  prerequisites:
+    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby (Current version: 68f356b). Открыта задача с любыми заданными параметрами.
+  test-data: |
+    Нет данных
+  steps:
+    - Выбираем вкладку "OUTPUT"
+  expected-result: |
+    Открывается вкладка "OUTPUT"
+
+- summary: |
+    Проверка перехода на вкладку "TASK" в игре (при открытой "OUTPUT")
+  requirement: |
+    Пользователь должен иметь возможность решать задачи на скорость против другого игрока
+  prerequisites:
+    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby (Current version: 68f356b). Открыта задача с любыми заданными параметрами
+  test-data: |
+    Нет данных
+  steps:
+    - Выбираем вкладку "TASK"
+  expected-result: |
+    Открывается вкладка "TASK"
+
+- summary: |
+    Проверка возможности пользователя переключить язык, на котором дана задача с русского на английский (при установленном "RU")
+  requirement: |
+    Задачи должны быть даны на двух языках — русском и английском
+  prerequisites:
+    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby (Current version: 68f356b). Открыта задача с любыми заданными параметрами
+  test-data: |
+    Нет данных
+  steps:
+    - Нажимаем на кнопку "RU" во вкладке "TASK"
+    - В выпадающем списке выбираем "EN"
+  expected-result: |
+    Задача отображается на английском языке
+
+- summary: |
+    Проверка возможности пользователя переключить язык, на котором дана задача с английского на русский (при установленном "EN")
+  requirement: |
+    Задачи должны быть даны на двух языках — русском и английском
+  prerequisites:
+    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby (Current version: 68f356b). Открыта задача с любыми заданными параметрами
+  test-data: |
+    Нет данных
+  steps:
+    - Нажимаем на кнопку "EN" во вкладке "TASK"
+    - В выпадающем списке выбираем "RU"
+  expected-result: |
+    Задача отображается на русском языке
+
+- summary: |
+    Проверка работы кнопки "Expand"
+  requirement: |
+    Сайт должен быть разработан с учетом удобства использования
+  prerequisites:
+    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby (Current version: 68f356b). Открыта задача с любыми заданными параметрами
+  test-data: |
+    Нет данных
+  steps:
+    - Нажимаем на кнопку "Expand" во вкладке "TASK"
+  expected-result: |
+    Открывается модальное окно "Task Description" с текущей задачей
+
+- summary: |
+    Проверка работы кнопки "Close" в модальном окне "Task Description"
+  requirement: |
+    Сайт должен быть разработан с учетом удобства использования
+  prerequisites:
+    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby (Current version: 68f356b). Открыта задача с любыми заданными параметрами
+  test-data: |
+    Нет данных
+  steps:
+    - Нажимаем на кнопку "Expand" во вкладке "TASK"
+    - В открывшемся модальном окне "Task Description" нажимаем на кнопку "Close"
+  expected-result: |
+    Модальное окно "Task Description" закрыто
+
+- summary: |
+    Проверка работы кнопки крестик в модальном окне "Task Description"
+  requirement: |
+    Сайт должен быть разработан с учетом удобства использования
+  prerequisites:
+    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby (Current version: 68f356b). Открыта задача с любыми заданными параметрами
+  test-data: |
+    Нет данных
+  steps:
+    - Нажимаем на кнопку "Expand" во вкладке "TASK"
+    - В открывшемся модальном окне "Task Description" нажимаем на кнопку крестик
+  expected-result: |
+    Модальное окно "Task Description" закрыто
+
+- summary: |
+    Проверка работы кнопки "Show guide"
+  requirement: |
+    Сайт должен быть разработан с учетом удобства использования
+  prerequisites:
+    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby (Current version: 68f356b). Открыта задача с любыми заданными параметрами
+  test-data: |
+    Нет данных
+  steps:
+    - Нажимаем на кнопку "Show guide" во вкладке "TASK"
+  expected-result: |
+    Открывается модальное окно с руководством пользователя
+
+- summary: |
+    Проверка возможности пользователя переключить язык программирования во время игры
+  requirement: |
+    Оба игрока должны иметь возможность менять язык программирования во время решения
+  prerequisites:
+    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby (Current version: 68f356b). Открыта задача с любыми заданными параметрами
+  test-data: |
+    Нет данных
+  steps:
+    - Нажимаем на выпадающий список с языками программирования
+    - Выбираем любой язык программирования отличный от текущего
+  expected-result: |
+    В редакторе отображается шаблон кода на выбранном языке программирования
+
+- summary: |
+    Проверка работы кнопки "Back to Home" во время игры
+  requirement: |
+    Сайт должен быть разработан с учетом удобства использования
+  prerequisites:
+    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby (Current version: 68f356b). Открыта задача с любыми заданными параметрами
+  test-data: |
+    Нет данных
+  steps:
+    - Нажимаем на кнопку "Back to Home"
+  expected-result: |
+    Открыта главная страница сайта 
+
+- summary: |
+    Проверка работы кнопки "Open History" во время игры
+  requirement: |
+    Сайт должен быть разработан с учетом удобства использования
+  prerequisites:
+    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby (Current version: 68f356b). Открыта задача с любыми заданными параметрами
+  test-data: |
+    Нет данных
+  steps:
+    - Нажимаем на кнопку "Open History"
+  expected-result: |
+    В низу страницы появляется проигрыватель. Кнопка "Open History" становится кнопкой "Return to game" 
+
+- summary: |
+    Проверка кнопки "Run" во время игры
+  requirement: |
+    Пользователь должен иметь возможность решать задачи на скорость против другого игрока
+  prerequisites:
+    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby (Current version: 68f356b). Открыта задача с любыми заданными параметрами
+  test-data: |
+    Нет данных
+  steps:
+    - Нажимаем на кнопку "Run"
+  expected-result: |
+    Во вкладке "OUTPUT" - Test failed 
+
+- summary: |
+    Проверка работы кнопки крестик в модальном окне "If you read this you've lost the game" при проигрыше
+  requirement: |
+    Сайт должен быть разработан с учетом удобства использования
+  prerequisites:
+    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby (Current version: 68f356b). Открыта задача с любыми заданными параметрами. Игра проиграна
+  test-data: |
+    Нет данных
+  steps:
+    - В открывшемся модальном окне "If you read this you've lost the game" нажимаем на кнопку крестик
+  expected-result: |
+    Модальное окно "If you read this you've lost the game" закрыто
+
+- summary: |
+    Проверка работы кнопки "I'll be back" в модальном окне "If you read this you've lost the game" при проигрыше
+  requirement: |
+    Сайт должен быть разработан с учетом удобства использования
+  prerequisites:
+    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby (Current version: 68f356b). Открыта задача с любыми заданными параметрами. Игра проиграна
+  test-data: |
+    Нет данных
+  steps:
+    - В открывшемся модальном окне "If you read this you've lost the game" нажимаем на кнопку "I'll be back"
+  expected-result: |
+    Модальное окно "If you read this you've lost the game" закрыто
+
+- summary: |
+    Проверка возможности победы в игре
+  requirement: |
+    Сайт должен быть разработан с учетом удобства использования
+  prerequisites:
+    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby (Current version: 68f356b)
+  test-data: |
+Решение задачи: 
+const _ = require("lodash");
+const R = require("rambda");
+
+const solution = (width, length) => {
+  let solution = width * length;
+  return solution:;
+};
+
+module.exports = solution;
+  steps:
+    - Нажимаем на зеленую кнопку "CREATE A GAME"
+    - Выбираем "level" 1 звезда
+    - Выбираем "Game Type" "with a bot"
+    - Устанавливаем "Time control" на "60 min"
+    - В выпадающем списке "rect_area"
+    - Нажимаем кнопку "Create battle"
+    - В выпадающем списке выбираем язык NodeJS
+    - Вводим решение задачи
+    - Нажимаем "Run"
+  expected-result: |
+    Открывается модальное окно сообщающее о победе 
+
+- summary: |
+    Проверка работы кнопки "GG" в модальном окне при победе
+  requirement: |
+    Сайт должен быть разработан с учетом удобства использования
+  prerequisites:
+    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby (Current version: 68f356b)
+  test-data: |
+Параметры для задачи: "level" - 1 звезда, "Game Type" - "with a bot", "Time control" - "60 min", задача - "rect_area".
+Решение задачи: 
+const _ = require("lodash");
+const R = require("rambda");
+
+const solution = (width, length) => {
+  let solution = width * length;
+  return solution:;
+};
+
+module.exports = solution;
+  steps:
+    - Нажимаем на зеленую кнопку "CREATE A GAME"
+    - Вводим параметры задачи
+    - Нажимаем кнопку "Create battle"
+    - В выпадающем списке выбираем язык NodeJS
+    - Вводим решение задачи
+    - Нажимаем "Run"
+    - В открывшемся модальном окне о победе нажимаем кнопку "GG"
+  expected-result: |
+    Модальное окно сообщающее о победе закрыто 
+
+- summary: |
+    Проверка работы кнопки крестик в модальном окне при победе
+  requirement: |
+    Сайт должен быть разработан с учетом удобства использования
+  prerequisites:
+    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby (Current version: 68f356b)
+  test-data: |
+Параметры для задачи: "level" - 1 звезда, "Game Type" - "with a bot", "Time control" - "60 min", задача - "rect_area".
+Решение задачи: 
+const _ = require("lodash");
+const R = require("rambda");
+
+const solution = (width, length) => {
+  let solution = width * length;
+  return solution:;
+};
+
+module.exports = solution;
+  steps:
+    - Нажимаем на зеленую кнопку "CREATE A GAME"
+    - Вводим параметры задачи
+    - Нажимаем кнопку "Create battle"
+    - В выпадающем списке выбираем язык NodeJS
+    - Вводим решение задачи
+    - Нажимаем "Run"
+    - В открывшемся модальном окне в правом верхнем углу нажимаем кнопку крестик
+  expected-result: |
+    Модальное окно сообщающее о победе закрыто
+
+- summary: |
+    Проверка возможности перехода на вкладку "MONTH" в таблице "LEADERBOARD" (при выбранной "WEEK")  
+  requirement: |
+    Пользователь должен иметь возможность видеть рейтинг игроков за месяц  
+  prerequisites:
+    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby (Current version: 68f356b). В таблице выбрана вкладка "WEEK".
+  test-data: |
+    Нет данных
+  steps:
+    - Нажимаем на "MONTH"
+  expected-result: |
+    Открыта вкладка с рейтингом игроков за месяц
+
+- summary: |
+    Проверка возможности перехода на вкладку "ALL" в таблице "LEADERBOARD" (при выбранной "WEEK")  
+  requirement: |
+    Пользователь должен иметь возможность видеть рейтинг игроков за все время 
+  prerequisites:
+    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby (Current version: 68f356b). В таблице выбрана вкладка "WEEK".
+  test-data: |
+    Нет данных
+  steps:
+    - Нажимаем на "ALL"
+  expected-result: |
+    Открыта вкладка с рейтингом игроков за все время
+
+- summary: |
+    Проверка возможности перехода на вкладку "WEEK" в таблице "LEADERBOARD" (при выбранной "ALL")  
+  requirement: |
+    Пользователь должен иметь возможность видеть рейтинг игроков за неделю 
+  prerequisites:
+    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby (Current version: 68f356b). В таблице выбрана вкладка "ALL".
+  test-data: |
+    Нет данных
+  steps:
+    - Нажимаем на "ALL"
+  expected-result: |
+    Открыта вкладка с рейтингом игроков за неделю
+
+- summary: |
+    Проверка возможности перехода на вкладку "WEEK" в таблице "LEADERBOARD" (при выбранной "ALL")  
+  requirement: |
+    Пользователь должен иметь возможность видеть рейтинг игроков за неделю 
+  prerequisites:
+    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby (Current version: 68f356b). В таблице выбрана вкладка "ALL".
+  test-data: |
+    Нет данных
+  steps:
+    - Нажимаем на "ALL"
+  expected-result: |
+    Открыта вкладка с рейтингом игроков за неделю
+
+- summary: |
+    Проверка работы ссылки "Top list" в таблице "LEADERBOARD"
+  requirement: |
+    При нажатии на ссылку "Top list" в таблице "LEADERBOARD" должна открыться страница Users rating
+    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby (Current version: 68f356b)
+  test-data: |
+    Нет данных
+  steps:
+    - Нажимаем на ссылку "Top list" в  низу таблицы "LEADERBOARD"
+  expected-result: |
+    Открыта страница Users rating
+
+- summary: |
+    Проверка возможности перехода на вкладку "TOURNAMENTS" на главной странице (при выбранной "LOBBY") 
+  requirement: |
+    Сайт должен быть разработан с учетом удобства использования
+  prerequisites:
+    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby (Current version: 68f356b). В таблице выбрана вкладка "LOBBY".
+  test-data: |
+    Нет данных
+  steps:
+    - Нажимаем на "TOURNAMENTS"
+  expected-result: |
+    Открыта вкладка со списком о действующих и завершенных турнирах на главной странице
+
+- summary: |
+    Проверка возможности перехода на вкладку "HISTORY" на главной странице (при выбранной "LOBBY") 
+  requirement: |
+    Завершенная игра должна быть доступна в записи
+  prerequisites:
+    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby (Current version: 68f356b). В таблице выбрана вкладка "LOBBY".
+  test-data: |
+    Нет данных
+  steps:
+    - Нажимаем на "HISTORY"
+  expected-result: |
+    Открыта вкладка со списком прошедших игр
+
+- summary: |
+    Проверка возможности перехода на вкладку "LOBBY" на главной странице (при выбранной "HISTORY") 
+  requirement: |
+    Пользователь должен иметь возможность играть с любым человеком, с ботом или другом
+  prerequisites:
+    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby (Current version: 68f356b). В таблице выбрана вкладка "HISTORY".
+  test-data: |
+    Нет данных
+  steps:
+    - Нажимаем на "LOBBY"
+  expected-result: |
+    Открыта вкладка со списком игроков ожидающих игры
+
+- summary: |
+    Проверка работы кнопки "Fight" на вкладке "LOBBY"
+  requirement: |
+    Пользователь должен иметь возможность играть с любым человеком, с ботом или другом
+  prerequisites:
+    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby (Current version: 68f356b). В таблице выбрана вкладка "LOBBY".
+  test-data: |
+    Нет данных
+  steps:
+    - В поле Actions нажимаем кнопку "Fight" у любого предложения игры
+  expected-result: |
+    Открыта страница с выбранной игрой
+
+- summary: |
+    Проверка работы кнопки "Send" в чате
+  requirement: |
+    В игре должен быть чат, в котором будут общаться зарегистрированные пользователи
+  prerequisites:
+    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby (Current version: 68f356b).
+  test-data: |
+    Нет данных
+  steps:
+    - В низу главной страницы с лева в поле ввода сообщения вводим любой текст
+    - Нажимаем кнопку "Send"
+  expected-result: |
+    Сообщение отправлено. Сообщение появилось в основном окне чата
+
+- summary: |
+    Проверка работы пиктограммы "Send message" в чате
+  requirement: |
+    В игре должен быть чат, в котором будут общаться зарегистрированные пользователи
+  prerequisites:
+    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby (Current version: 68f356b).
+  test-data: |
+    Нет данных
+  steps:
+    - В правом верхнем углу чата нажимаем на "Send message"
+  expected-result: |
+    Открыто модальное окно "Send private message" со списком онлайн-пользователей
+
+- summary: |
+    Проверка работы "крестика" в модальном окне "Send private message"
+  requirement: |
+    В игре должен быть чат, в котором будут общаться зарегистрированные пользователи
+  prerequisites:
+    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby (Current version: 68f356b).
+  test-data: |
+    Нет данных
+  steps:
+    - В правом верхнем углу чата нажимаем на "Send message"
+    - В модальном окне "Send private message" в верхнем правом углу нажимаем на "крестик"
+  expected-result: |
+    Модальное окно закрыто
+
+ summary: |
+    Проверка работы пиктограммы "Send fight invite" в чате
+  requirement: |
+    В игре должен быть чат, в котором будут общаться зарегистрированные пользователи
+  prerequisites:
+    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby (Current version: 68f356b).
+  test-data: |
+    Нет данных
+  steps:
+    - В правом верхнем углу чата нажимаем на "Send fight invite"
+  expected-result: |
+    Открыто модальное окно "Send battle invite" со списком онлайн-пользователей
+
+ summary: |
+    Проверка работы кнопки переключения чата
+  requirement: |
+    В игре должен быть чат, в котором будут общаться зарегистрированные пользователи
+  prerequisites:
+    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby (Current version: 68f356b).
+  test-data: |
+    Нет данных
+  steps:
+    - В левом верхнем углу чата нажимаем на синюю кнопку с текущим названием чата
+    - В выпадающем списке выбираем любой чат отличный от текущего
+  expected-result: |
+    Открыт выбранный чат
