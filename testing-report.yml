@@ -1,0 +1,279 @@
+- summary: |
+    Проверка работы кнопки "Sign up" на главной странице сайта
+  status: pass
+
+- summary: |
+    Проверка ошибки регистрации пользователя с уже существующими Nickname
+  status: pass
+
+- summary: |
+    Проверка ошибки регистрации пользователя с неправильным Email
+  status: pass
+
+- summary: |
+    Проверка ошибки регистрации пользователя с уже зарегистрированным Email
+  status: pass
+
+- summary: |
+    Проверка ошибки регистрации пользователя с неправильным Password
+  status: pass
+
+- summary: |
+    Проверка ошибки регистрации пользователя с Password Confirmation отличным от Password
+  status: pass
+
+- summary: |
+    Проверка успешной регистрации пользователя
+  status: pass
+
+- summary: |
+    Проверка работы кнопки "Sign up with Github" на странице авторизации
+  status: pass
+
+- summary: |
+    Проверка работы кнопки "Sign up with Discord" на странице авторизации
+  status: fail
+
+- summary: |
+    Проверка работы кнопки "Sing in" на главной странице сайта
+  status: pass
+
+- summary: |
+    Проверка ошибки авторизации пользователя с неправильным Email
+  status: pass
+
+- summary: |
+    Проверка ошибки авторизации пользователя с неправильным Password
+  status: pass
+
+- summary: |
+    Проверка успешной авторизации пользователя
+  status: pass
+
+- summary: |
+    Проверка работы кнопки "Sign in with Github" на странице авторизации (при наличии аккаунта)
+  status: pass
+
+- summary: |
+    Проверка работы кнопки "Sign in with Discord" на странице авторизации (при наличии аккаунта)
+  status: fail
+
+- summary: |
+    Проверка работы логотипа профиля игрока
+  status: pass
+
+- summary: |
+    Проверка работы "My Profile" в выпадающем списке
+  status: pass
+
+- summary: |
+    Проверка возможности перехода на вкладку "COMPLETED GAMES" в "My Profile" выпадающего списка(при выбранной "STATISTICS")  
+  status: pass
+
+- summary: |
+    Проверка возможности перехода на вкладку "STATISTICS" в "My Profile" выпадающего списка (при выбранной "COMPLETED GAMES")  
+  status: pass
+
+- summary: |
+    Проверка работы "Settings" в выпадающем списке
+  status: pass
+
+- summary: |
+    Проверка работы "Users rating" в выпадающем списке
+  status: pass
+
+- summary: |
+    Проверка работы "Tournaments" в выпадающем списке
+  status: pass
+
+- summary: |
+    Проверка работы кнопки "Show" в таблице "Tournaments"
+  status: pass
+
+- summary: |
+    Проверка работы "Tasks" в выпадающем списке
+  status: pass
+
+- summary: |
+    Проверка работы кнопки "Show" в таблице Tasks
+  status: pass
+
+- summary: |
+    Проверка работы кнопки "Create new task" в Tasks
+  status: pass
+
+- summary: |
+    Проверка работы кнопки "Task packs" в "Tasks"
+  status: pass
+
+- summary: |
+    Проверка работы "Clans" в выпадающем списке
+  status: pass
+
+- summary: |
+    Проверка работы кнопки "Show" в таблице "Clans"
+  status: pass
+
+- summary: |
+    Проверка работы "SourceCode" в выпадающем списке
+  status: pass
+
+- summary: |
+    Проверка работы "Hexlet" в выпадающем списке
+  status: pass
+
+- summary: |
+    Проверка работы "Join Discord" в выпадающем списке
+  status: pass
+
+- summary: |
+    Проверка работы "Tg#codebattle" в выпадающем списке
+  status: pass
+
+- summary: |
+    Проверка работы "Sing Out" в выпадающем списке
+  status: pass
+
+- summary: |
+    Проверка работы логотипа игры в меню сайта
+  status: pass
+
+- summary: |
+    Проверка работы ссылки "Star us" в меню сайта
+  status: pass
+
+- summary: |
+    Проверка работы кнопки "CREATE A GAME" главной странницы сайта
+  status: pass
+
+- summary: |
+    Проверка работы кнопки "Create battle" с параметрами игры заданными по умолчанию
+  status: pass
+
+- summary: |
+    Проверка работы кнопки "Create battle" при самостоятельно заданных параметрах игры
+  status: pass
+
+- summary: |
+    Проверка перехода на вкладку "OUTPUT" в игре (при открытой "TASK")
+  status: pass
+
+- summary: |
+    Проверка перехода на вкладку "TASK" в игре (при открытой "OUTPUT")
+  status: pass
+
+- summary: |
+    Проверка возможности пользователя переключить язык, на котором дана задача с русского на английский (при установленном "RU")
+  status: pass
+
+- summary: |
+    Проверка возможности пользователя переключить язык, на котором дана задача с английского на русский (при установленном "EN")
+  status: pass
+
+- summary: |
+    Проверка работы кнопки "Expand"
+  status: pass
+
+- summary: |
+    Проверка работы кнопки "Close" в модальном окне "Task Description"
+  status: pass
+
+- summary: |
+    Проверка работы кнопки крестик в модальном окне "Task Description"
+  status: pass
+
+- summary: |
+    Проверка работы кнопки "Show guide"
+  status: pass
+
+- summary: |
+    Проверка возможности пользователя переключить язык программирования во время игры
+  status: pass
+
+- summary: |
+    Проверка работы кнопки "Back to Home" во время игры
+  status: pass
+
+- summary: |
+    Проверка работы кнопки "Open History" во время игры
+  status: pass
+
+- summary: |
+    Проверка кнопки "Run" во время игры
+  status: pass
+
+- summary: |
+    Проверка работы кнопки крестик в модальном окне "If you read this you've lost the game" при проигрыше
+  status: pass
+
+- summary: |
+    Проверка работы кнопки "I'll be back" в модальном окне "If you read this you've lost the game" при проигрыше
+  status: pass
+
+- summary: |
+    Проверка возможности победы в игре
+  status: pass
+
+- summary: |
+    Проверка работы кнопки "GG" в модальном окне при победе
+  status: pass
+
+- summary: |
+    Проверка работы кнопки крестик в модальном окне при победе
+  status: pass
+
+- summary: |
+    Проверка возможности перехода на вкладку "MONTH" в таблице "LEADERBOARD" (при выбранной "WEEK")  
+  status: pass
+
+- summary: |
+    Проверка возможности перехода на вкладку "ALL" в таблице "LEADERBOARD" (при выбранной "WEEK")  
+  status: pass
+
+- summary: |
+    Проверка возможности перехода на вкладку "WEEK" в таблице "LEADERBOARD" (при выбранной "ALL")  
+  status: pass
+
+- summary: |
+    Проверка возможности перехода на вкладку "WEEK" в таблице "LEADERBOARD" (при выбранной "ALL")  
+  status: pass
+
+- summary: |
+    Проверка работы ссылки "Top list" в таблице "LEADERBOARD"
+  status: pass
+
+- summary: |
+    Проверка возможности перехода на вкладку "TOURNAMENTS" на главной странице (при выбранной "LOBBY") 
+  status: pass
+
+- summary: |
+    Проверка возможности перехода на вкладку "HISTORY" на главной странице (при выбранной "LOBBY") 
+  status: pass
+
+- summary: |
+    Проверка возможности перехода на вкладку "LOBBY" на главной странице (при выбранной "HISTORY") 
+  status: pass
+
+- summary: |
+    Проверка работы кнопки "Fight" на вкладке "LOBBY"
+  status: pass
+
+- summary: |
+    Проверка работы кнопки "Send" в чате
+  status: pass
+
+- summary: |
+    Проверка работы пиктограммы "Send message" в чате
+  status: pass
+
+- summary: |
+    Проверка работы "крестика" в модальном окне "Send private message"
+  status: pass
+
+ summary: |
+    Проверка работы пиктограммы "Send fight invite" в чате
+  status: pass
+
+ summary: |
+    Проверка работы кнопки переключения чата
+  status: pass
