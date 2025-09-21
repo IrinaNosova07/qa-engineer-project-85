@@ -188,7 +188,7 @@
 
 - summary: |
     Проверка работы кнопки "(Next _/8)" в руководстве пользователя во вкладке "TASK"
- status: fail
+  status: fail
 
 - summary: |
     Проверка возможности пользователя переключить язык программирования во время игры
@@ -274,10 +274,11 @@
     Проверка работы "крестика" в модальном окне "Send private message"
   status: pass
 
- summary: |
+- summary: |
     Проверка работы пиктограммы "Send fight invite" в чате
   status: pass
 
- summary: |
+- summary: |
     Проверка работы кнопки переключения чата
   status: pass
+
