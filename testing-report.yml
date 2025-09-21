@@ -32,7 +32,7 @@
 
 - summary: |
     Проверка работы кнопки "Sign up with Discord" на странице авторизации
-  status: blocked
+  status: fail
 
 - summary: |
     Проверка работы кнопки "Sing in" на главной странице сайта
@@ -56,7 +56,7 @@
 
 - summary: |
     Проверка работы кнопки "Sign in with Discord" на странице авторизации (при наличии аккаунта)
-  status: blocked
+  status: fail
 
 - summary: |
     Проверка работы логотипа профиля игрока
@@ -124,7 +124,7 @@
 
 - summary: |
     Проверка работы "Join Discord" в выпадающем списке
-  status: blocked
+  status: fail
 
 - summary: |
     Проверка работы "Tg#codebattle" в выпадающем списке
@@ -281,5 +281,6 @@
 - summary: |
     Проверка работы кнопки переключения чата
   status: pass
+
 
 
