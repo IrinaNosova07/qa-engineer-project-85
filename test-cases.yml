@@ -770,16 +770,16 @@
   prerequisites:
     Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby (Current version: 68f356b)
   test-data: |
-Решение задачи: 
-const _ = require("lodash");
-const R = require("rambda");
+    Решение задачи: 
+    const _ = require("lodash");
+    const R = require("rambda");
 
-const solution = (width, length) => {
-  let solution = width * length;
-  return solution:;
-};
+    const solution = (width, length) => {
+    let solution = width * length;
+    return solution:;
+    };
 
-module.exports = solution;
+    module.exports = solution;
   steps:
     - Нажимаем на зеленую кнопку "CREATE A GAME"
     - Выбираем "level" 1 звезда
@@ -800,17 +800,17 @@ module.exports = solution;
   prerequisites:
     Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby (Current version: 68f356b)
   test-data: |
-Параметры для задачи: "level" - 1 звезда, "Game Type" - "with a bot", "Time control" - "60 min", задача - "rect_area".
-Решение задачи: 
-const _ = require("lodash");
-const R = require("rambda");
+    Параметры для задачи: "level" - 1 звезда, "Game Type" - "with a bot", "Time control" - "60 min", задача - "rect_area".
+    Решение задачи: 
+    const _ = require("lodash");
+    const R = require("rambda");
 
-const solution = (width, length) => {
-  let solution = width * length;
-  return solution:;
-};
+    const solution = (width, length) => {
+    let solution = width * length;
+    return solution:;
+    };
 
-module.exports = solution;
+    module.exports = solution;
   steps:
     - Нажимаем на зеленую кнопку "CREATE A GAME"
     - Вводим параметры задачи
@@ -829,17 +829,17 @@ module.exports = solution;
   prerequisites:
     Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby (Current version: 68f356b)
   test-data: |
-Параметры для задачи: "level" - 1 звезда, "Game Type" - "with a bot", "Time control" - "60 min", задача - "rect_area".
-Решение задачи: 
-const _ = require("lodash");
-const R = require("rambda");
+    Параметры для задачи: "level" - 1 звезда, "Game Type" - "with a bot", "Time control" - "60 min", задача - "rect_area".
+    Решение задачи: 
+    const _ = require("lodash");
+    const R = require("rambda");
 
-const solution = (width, length) => {
-  let solution = width * length;
-  return solution:;
-};
+    const solution = (width, length) => {
+    let solution = width * length;
+    return solution:;
+    };
 
-module.exports = solution;
+    module.exports = solution;
   steps:
     - Нажимаем на зеленую кнопку "CREATE A GAME"
     - Вводим параметры задачи
@@ -1008,7 +1008,7 @@ module.exports = solution;
   expected-result: |
     Модальное окно закрыто
 
- summary: |
+- summary: |
     Проверка работы пиктограммы "Send fight invite" в чате
   requirement: |
     В игре должен быть чат, в котором будут общаться зарегистрированные пользователи
@@ -1021,7 +1021,7 @@ module.exports = solution;
   expected-result: |
     Открыто модальное окно "Send battle invite" со списком онлайн-пользователей
 
- summary: |
+- summary: |
     Проверка работы кнопки переключения чата
   requirement: |
     В игре должен быть чат, в котором будут общаться зарегистрированные пользователи
@@ -1034,3 +1034,4 @@ module.exports = solution;
     - В выпадающем списке выбираем любой чат отличный от текущего
   expected-result: |
     Открыт выбранный чат
+
