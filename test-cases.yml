@@ -3,7 +3,7 @@
   requirement: |
     Пользователь должен иметь возможность регистрации на сайте
   prerequisites:
-    Открыта главная страница сайта https://codebattle.hexlet.io/ (Current version: 68f356b)
+    Открыта главная страница сайта https://codebattle.hexlet.io/
   test-data: |
     Нет данных
   steps:
@@ -16,7 +16,7 @@
   requirement: |
     Пользователь должен иметь возможность регистрации на сайте
   prerequisites:
-    Открыта страница регистрации сайта https://codebattle.hexlet.io/users/new?locale=en&next=%2F (Current version: 68f356b)
+    Открыта страница регистрации сайта https://codebattle.hexlet.io/users/new?locale=en&next=%2F
   test-data: |
     Nickname = chameleon Email = Gok@mail.ru Password = ghbdtnvbh@ Password Confirmation = ghbdtnvbh@ 
   steps:
@@ -33,7 +33,7 @@
   requirement: |
     Пользователь должен иметь возможность регистрации на сайте
   prerequisites:
-    Открыта страница регистрации сайта https://codebattle.hexlet.io/users/new?locale=en&next=%2F (Current version: 68f356b)
+    Открыта страница регистрации сайта https://codebattle.hexlet.io/users/new?locale=en&next=%2F
   test-data: |
     Nickname = chameleon Email = Gokаdjon Password = парапапапа! Password Confirmation = парапапапа! 
   steps:
@@ -50,7 +50,7 @@
   requirement: |
     Пользователь должен иметь возможность регистрации на сайте
   prerequisites:
-    Открыта страница регистрации сайта https://codebattle.hexlet.io/users/new?locale=en&next=%2F (Current version: 68f356b)
+    Открыта страница регистрации сайта https://codebattle.hexlet.io/users/new?locale=en&next=%2F
   test-data: |
     Nickname = zombizorro Email = Ir4en-i@mail.ru Password = ghdjbbsukkkkdk@ Password Confirmation = ghdjbbsukkkkdk@
   steps:
@@ -67,7 +67,7 @@
   requirement: |
     Пользователь должен иметь возможность регистрации на сайте
   prerequisites:
-    Открыта страница регистрации сайта https://codebattle.hexlet.io/users/new?locale=en&next=%2F (Current version: 68f356b)
+    Открыта страница регистрации сайта https://codebattle.hexlet.io/users/new?locale=en&next=%2F
   test-data: |
     Nickname = chameleon Email = Ir4en-i@mail.ru Password = парапапапа Password Confirmation = парапапапа
   steps:
@@ -84,7 +84,7 @@
   requirement: |
     Пользователь должен иметь возможность регистрации на сайте
   prerequisites:
-    Открыта страница регистрации сайта https://codebattle.hexlet.io/users/new?locale=en&next=%2F (Current version: 68f356b)
+    Открыта страница регистрации сайта https://codebattle.hexlet.io/users/new?locale=en&next=%2F
   test-data: |
     Nickname = chameleon Email = Ir4en-i@mail.ru Password = парапапапа! Password Confirmation = парапапапа@
   steps:
@@ -101,7 +101,7 @@
   requirement: |
     Пользователь должен иметь возможность регистрации на сайте
   prerequisites:
-    Открыта страница регистрации сайта https://codebattle.hexlet.io/users/new?locale=en&next=%2F (Current version: 68f356b)
+    Открыта страница регистрации сайта https://codebattle.hexlet.io/users/new?locale=en&next=%2F
   test-data: |
     Nickname = chameleon Email = Ir4en-i@mail.ru Password = парапапапа! Password Confirmation = парапапапа!
   steps:
@@ -118,7 +118,7 @@
   requirement: |
     Пользователь должен иметь возможность авторизации на сайте
   prerequisites:
-    Открыта страница авторизации сайта https://codebattle.hexlet.io/session/new?locale=en&next=%2F (Current version: 68f356b)
+    Открыта страница авторизации сайта https://codebattle.hexlet.io/session/new?locale=en&next=%2F
   test-data: |
     Нет данных
   steps:
@@ -131,7 +131,7 @@
   requirement: |
     Пользователь должен иметь возможность авторизации на сайте
   prerequisites:
-    Открыта страница авторизации сайта https://codebattle.hexlet.io/session/new?locale=en&next=%2F (Current version: 68f356b)
+    Открыта страница авторизации сайта https://codebattle.hexlet.io/session/new?locale=en&next=%2F
   test-data: |
     Нет данных
   steps:
@@ -144,7 +144,7 @@
   requirement: |
     Пользователь должен иметь возможность авторизации на сайте
   prerequisites:
-    Открыта главная страница сайта https://codebattle.hexlet.io/ (Current version: 68f356b)
+    Открыта главная страница сайта https://codebattle.hexlet.io/
   test-data: |
     Нет данных
   steps:
@@ -157,7 +157,7 @@
   requirement: |
     Пользователь должен иметь возможность авторизации на сайте
   prerequisites:
-    Открыта страница авторизации сайта https://codebattle.hexlet.io/session/new?locale=en&next=%2F (Current version: 68f356b)
+    Открыта страница авторизации сайта https://codebattle.hexlet.io/session/new?locale=en&next=%2F
   test-data: |
     Email = Gok@mail.ru Password = парапапапа!
   steps:
@@ -172,7 +172,7 @@
   requirement: |
     Пользователь должен иметь возможность авторизации на сайте
   prerequisites:
-    Открыта страница авторизации сайта https://codebattle.hexlet.io/session/new?locale=en&next=%2F (Current version: 68f356b)
+    Открыта страница авторизации сайта https://codebattle.hexlet.io/session/new?locale=en&next=%2F
   test-data: |
     Email = Ir4en-i@mail.ru Password = парапапапа@
   steps:
@@ -187,7 +187,7 @@
   requirement: |
     Пользователь должен иметь возможность авторизации на сайте
   prerequisites:
-    Открыта страница авторизации сайта https://codebattle.hexlet.io/session/new?locale=en&next=%2F (Current version: 68f356b)
+    Открыта страница авторизации сайта https://codebattle.hexlet.io/session/new?locale=en&next=%2F
   test-data: |
     Email = Ir4en-i@mail.ru Password = парапапапа!
   steps:
@@ -202,7 +202,7 @@
   requirement: |
     Пользователь должен иметь возможность авторизации на сайте
   prerequisites:
-    Открыта страница авторизации сайта https://codebattle.hexlet.io/session/new?locale=en&next=%2F (Current version: 68f356b)
+    Открыта страница авторизации сайта https://codebattle.hexlet.io/session/new?locale=en&next=%2F
   test-data: |
     Нет данных
   steps:
@@ -215,7 +215,7 @@
   requirement: |
     Пользователь должен иметь возможность авторизации на сайте
   prerequisites:
-    Открыта страница авторизации сайта https://codebattle.hexlet.io/session/new?locale=en&next=%2F (Current version: 68f356b)
+    Открыта страница авторизации сайта https://codebattle.hexlet.io/session/new?locale=en&next=%2F
   test-data: |
     Нет данных
   steps:
@@ -228,7 +228,7 @@
   requirement: |
     При нажатии на логотип профиля игрока в меню сайта должен появиться выпадающий список
   prerequisites:
-    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby (Current version: 68f356b)
+    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby
   test-data: |
     Нет данных
   steps:
@@ -241,7 +241,7 @@
   requirement: |
     Сайт должен быть разработан с учетом удобства использования
   prerequisites:
-    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby (Current version: 68f356b)
+    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby
   test-data: |
     Нет данных
   steps:
@@ -255,7 +255,7 @@
   requirement: |
     Сайт должен быть разработан с учетом удобства использования 
   prerequisites:
-    Пользователь авторизован. Открыта страница "My Profile" сайта https://codebattle.hexlet.io/users/19574 (Current version: 68f356b). Выбрана вкладка "STATISTICS".
+    Пользователь авторизован. Открыта страница "My Profile" сайта https://codebattle.hexlet.io/users/19574. Выбрана вкладка "STATISTICS".
   test-data: |
     Нет данных
   steps:
@@ -268,7 +268,7 @@
   requirement: |
     Сайт должен быть разработан с учетом удобства использования
   prerequisites:
-    Пользователь авторизован. Открыта страница "My Profile" сайта https://codebattle.hexlet.io/users/19574 (Current version: 68f356b). Выбрана вкладка "COMPLETED GAMES".
+    Пользователь авторизован. Открыта страница "My Profile" сайта https://codebattle.hexlet.io/users/19574. Выбрана вкладка "COMPLETED GAMES".
   test-data: |
     Нет данных
   steps:
@@ -281,7 +281,7 @@
   requirement: |
     Сайт должен быть разработан с учетом удобства использования
   prerequisites:
-    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby (Current version: 68f356b)
+    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby
   test-data: |
     Нет данных
   steps:
@@ -295,7 +295,7 @@
   requirement: |
     Сайт должен быть разработан с учетом удобства использования
   prerequisites:
-    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby (Current version: 68f356b)
+    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby
   test-data: |
     Нет данных
   steps:
@@ -309,7 +309,7 @@
   requirement: |
     Сайт должен быть разработан с учетом удобства использования
   prerequisites:
-    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby (Current version: 68f356b)
+    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby
   test-data: |
     Нет данных
   steps:
@@ -323,7 +323,7 @@
   requirement: |
     Сайт должен быть разработан с учетом удобства использования
   prerequisites:
-    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby (Current version: 68f356b)
+    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby
   test-data: |
     Нет данных
   steps:
@@ -338,7 +338,7 @@
   requirement: |
     Сайт должен быть разработан с учетом удобства использования
   prerequisites:
-    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby (Current version: 68f356b)
+    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby
   test-data: |
     Нет данных
   steps:
@@ -352,7 +352,7 @@
   requirement: |
     Сайт должен быть разработан с учетом удобства использования
   prerequisites:
-    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby (Current version: 68f356b)
+    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby
   test-data: |
     Нет данных
   steps:
@@ -367,7 +367,7 @@
   requirement: |
     Сайт должен быть разработан с учетом удобства использования
   prerequisites:
-    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby (Current version: 68f356b)
+    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby
   test-data: |
     Нет данных
   steps:
@@ -382,7 +382,7 @@
   requirement: |
     Сайт должен быть разработан с учетом удобства использования
   prerequisites:
-    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby (Current version: 68f356b)
+    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby
   test-data: |
     Нет данных
   steps:
@@ -397,7 +397,7 @@
   requirement: |
     Сайт должен быть разработан с учетом удобства использования
   prerequisites:
-    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby (Current version: 68f356b)
+    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby
   test-data: |
     Нет данных
   steps:
@@ -411,7 +411,7 @@
   requirement: |
     Сайт должен быть разработан с учетом удобства использования
   prerequisites:
-    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby (Current version: 68f356b)
+    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby
   test-data: |
     Нет данных
   steps:
@@ -426,7 +426,7 @@
   requirement: |
     Сайт должен быть разработан с учетом удобства использования
   prerequisites:
-    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby (Current version: 68f356b)
+    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby
   test-data: |
     Нет данных
   steps:
@@ -440,7 +440,7 @@
   requirement: |
     Сайт должен быть разработан с учетом удобства использования
   prerequisites:
-    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby (Current version: 68f356b)
+    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby
   test-data: |
     Нет данных
   steps:
@@ -454,7 +454,7 @@
   requirement: |
     Сайт должен быть разработан с учетом удобства использования
   prerequisites:
-    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby (Current version: 68f356b)
+    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby
   test-data: |
     Нет данных
   steps:
@@ -468,7 +468,7 @@
   requirement: |
     Сайт должен быть разработан с учетом удобства использования
   prerequisites:
-    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby (Current version: 68f356b)
+    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby
   test-data: |
     Нет данных
   steps:
@@ -482,7 +482,7 @@
   requirement: |
     Сайт должен быть разработан с учетом удобства использования 
   prerequisites:
-    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby (Current version: 68f356b)
+    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby
   test-data: |
     Нет данных
   steps:
@@ -496,7 +496,7 @@
   requirement: |
     Сайт должен быть разработан с учетом удобства использования
   prerequisites:
-    Пользователь авторизован. Открыт "My Profile" https://codebattle.hexlet.io/users/19574 (Current version: 68f356b)
+    Пользователь авторизован. Открыт "My Profile" https://codebattle.hexlet.io/users/19574
   test-data: |
     Нет данных
   steps:
@@ -509,7 +509,7 @@
   requirement: |
     Сайт должен быть разработан с учетом удобства использования
   prerequisites:
-    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby (Current version: 68f356b)
+    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby
   test-data: |
     Нет данных
   steps:
@@ -522,7 +522,7 @@
   requirement: |
     Пользователь должен иметь возможность создавать новую игру с самостоятельно заданными параметрами
   prerequisites:
-   Пользователь должен иметь возможность выбрать игру по уровню сложности. При создании игры можно выбрать определенную игру, иначе она будет подобрана наугад
+    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby
   test-data: |
     Нет данных
   steps:
@@ -535,7 +535,7 @@
   requirement: |
     При создании игры можно выбрать определенную игру, иначе она будет подобрана наугад
   prerequisites:
-    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby (Current version: 68f356b)
+    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby
   test-data: 
     Нет данных
   steps:
@@ -549,7 +549,7 @@
   requirement: |
     Пользователь должен иметь возможность выбрать игру по уровню сложности
   prerequisites:
-    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby (Current version: 68f356b)
+    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby
   test-data: |
     Нет данных
   steps:
@@ -567,7 +567,7 @@
   requirement: |
     Оба игрока должны иметь возможность видеть друг у друга редактор с кодом, вывод тестов
   prerequisites:
-    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby (Current version: 68f356b). Открыта задача с любыми заданными параметрами.
+    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby. Открыта задача с любыми заданными параметрами.
   test-data: |
     Нет данных
   steps:
@@ -580,7 +580,7 @@
   requirement: |
     Пользователь должен иметь возможность решать задачи на скорость против другого игрока
   prerequisites:
-    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby (Current version: 68f356b). Открыта задача с любыми заданными параметрами
+    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby. Открыта задача с любыми заданными параметрами
   test-data: |
     Нет данных
   steps:
@@ -593,7 +593,7 @@
   requirement: |
     Задачи должны быть даны на двух языках — русском и английском
   prerequisites:
-    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby (Current version: 68f356b). Открыта задача с любыми заданными параметрами
+    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby. Открыта задача с любыми заданными параметрами
   test-data: |
     Нет данных
   steps:
@@ -607,7 +607,7 @@
   requirement: |
     Задачи должны быть даны на двух языках — русском и английском
   prerequisites:
-    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby (Current version: 68f356b). Открыта задача с любыми заданными параметрами
+    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby. Открыта задача с любыми заданными параметрами
   test-data: |
     Нет данных
   steps:
@@ -621,7 +621,7 @@
   requirement: |
     Сайт должен быть разработан с учетом удобства использования
   prerequisites:
-    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby (Current version: 68f356b). Открыта задача с любыми заданными параметрами
+    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby. Открыта задача с любыми заданными параметрами
   test-data: |
     Нет данных
   steps:
@@ -634,7 +634,7 @@
   requirement: |
     Сайт должен быть разработан с учетом удобства использования
   prerequisites:
-    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby (Current version: 68f356b). Открыта задача с любыми заданными параметрами
+    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby. Открыта задача с любыми заданными параметрами
   test-data: |
     Нет данных
   steps:
@@ -648,7 +648,7 @@
   requirement: |
     Сайт должен быть разработан с учетом удобства использования
   prerequisites:
-    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby (Current version: 68f356b). Открыта задача с любыми заданными параметрами
+    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby. Открыта задача с любыми заданными параметрами
   test-data: |
     Нет данных
   steps:
@@ -662,7 +662,7 @@
   requirement: |
     Сайт должен быть разработан с учетом удобства использования
   prerequisites:
-    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby (Current version: 68f356b). Открыта задача с любыми заданными параметрами
+    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby. Открыта задача с любыми заданными параметрами
   test-data: |
     Нет данных
   steps:
@@ -675,7 +675,7 @@
   requirement: |
     Сайт должен быть разработан с учетом удобства использования
   prerequisites:
-    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby (Current version: 68f356b). Открыта задача с любыми заданными параметрами
+    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby. Открыта задача с любыми заданными параметрами
   test-data: |
     Нет данных
   steps:
@@ -689,7 +689,7 @@
   requirement: |
     Оба игрока должны иметь возможность менять язык программирования во время решения
   prerequisites:
-    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby (Current version: 68f356b). Открыта задача с любыми заданными параметрами
+    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby. Открыта задача с любыми заданными параметрами
   test-data: |
     Нет данных
   steps:
@@ -703,7 +703,7 @@
   requirement: |
     Сайт должен быть разработан с учетом удобства использования
   prerequisites:
-    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby (Current version: 68f356b). Открыта задача с любыми заданными параметрами
+    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby. Открыта задача с любыми заданными параметрами
   test-data: |
     Нет данных
   steps:
@@ -716,7 +716,7 @@
   requirement: |
     Сайт должен быть разработан с учетом удобства использования
   prerequisites:
-    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby (Current version: 68f356b). Открыта задача с любыми заданными параметрами
+    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby. Открыта задача с любыми заданными параметрами
   test-data: |
     Нет данных
   steps:
@@ -729,7 +729,7 @@
   requirement: |
     Пользователь должен иметь возможность решать задачи на скорость против другого игрока
   prerequisites:
-    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby (Current version: 68f356b). Открыта задача с любыми заданными параметрами
+    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby. Открыта задача с любыми заданными параметрами
   test-data: |
     Нет данных
   steps:
@@ -742,7 +742,7 @@
   requirement: |
     Сайт должен быть разработан с учетом удобства использования
   prerequisites:
-    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby (Current version: 68f356b). Открыта задача с любыми заданными параметрами. Игра проиграна
+    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby. Открыта задача с любыми заданными параметрами. Игра проиграна
   test-data: |
     Нет данных
   steps:
@@ -755,7 +755,7 @@
   requirement: |
     Сайт должен быть разработан с учетом удобства использования
   prerequisites:
-    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby (Current version: 68f356b). Открыта задача с любыми заданными параметрами. Игра проиграна
+    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby. Открыта задача с любыми заданными параметрами. Игра проиграна
   test-data: |
     Нет данных
   steps:
@@ -768,7 +768,7 @@
   requirement: |
     Сайт должен быть разработан с учетом удобства использования
   prerequisites:
-    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby (Current version: 68f356b)
+    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby
   test-data: |
     Решение задачи: 
     const _ = require("lodash");
@@ -798,7 +798,7 @@
   requirement: |
     Сайт должен быть разработан с учетом удобства использования
   prerequisites:
-    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby (Current version: 68f356b)
+    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby
   test-data: |
     Параметры для задачи: "level" - 1 звезда, "Game Type" - "with a bot", "Time control" - "60 min", задача - "rect_area".
     Решение задачи: 
@@ -827,7 +827,7 @@
   requirement: |
     Сайт должен быть разработан с учетом удобства использования
   prerequisites:
-    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby (Current version: 68f356b)
+    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby
   test-data: |
     Параметры для задачи: "level" - 1 звезда, "Game Type" - "with a bot", "Time control" - "60 min", задача - "rect_area".
     Решение задачи: 
@@ -856,7 +856,7 @@
   requirement: |
     Пользователь должен иметь возможность видеть рейтинг игроков за месяц  
   prerequisites:
-    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby (Current version: 68f356b). В таблице выбрана вкладка "WEEK".
+    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby. В таблице выбрана вкладка "WEEK".
   test-data: |
     Нет данных
   steps:
@@ -869,7 +869,7 @@
   requirement: |
     Пользователь должен иметь возможность видеть рейтинг игроков за все время 
   prerequisites:
-    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby (Current version: 68f356b). В таблице выбрана вкладка "WEEK".
+    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby. В таблице выбрана вкладка "WEEK".
   test-data: |
     Нет данных
   steps:
@@ -882,7 +882,7 @@
   requirement: |
     Пользователь должен иметь возможность видеть рейтинг игроков за неделю 
   prerequisites:
-    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby (Current version: 68f356b). В таблице выбрана вкладка "ALL".
+    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby. В таблице выбрана вкладка "ALL".
   test-data: |
     Нет данных
   steps:
@@ -895,7 +895,7 @@
   requirement: |
     Пользователь должен иметь возможность видеть рейтинг игроков за неделю 
   prerequisites:
-    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby (Current version: 68f356b). В таблице выбрана вкладка "ALL".
+    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby. В таблице выбрана вкладка "ALL".
   test-data: |
     Нет данных
   steps:
@@ -906,8 +906,9 @@
 - summary: |
     Проверка работы ссылки "Top list" в таблице "LEADERBOARD"
   requirement: |
-    При нажатии на ссылку "Top list" в таблице "LEADERBOARD" должна открыться страница Users rating
-    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby (Current version: 68f356b)
+    Сайт должен быть разработан с учетом удобства использования
+  prerequisites:
+    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby
   test-data: |
     Нет данных
   steps:
@@ -920,7 +921,7 @@
   requirement: |
     Сайт должен быть разработан с учетом удобства использования
   prerequisites:
-    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby (Current version: 68f356b). В таблице выбрана вкладка "LOBBY".
+    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby. В таблице выбрана вкладка "LOBBY".
   test-data: |
     Нет данных
   steps:
@@ -933,7 +934,7 @@
   requirement: |
     Завершенная игра должна быть доступна в записи
   prerequisites:
-    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby (Current version: 68f356b). В таблице выбрана вкладка "LOBBY".
+    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby. В таблице выбрана вкладка "LOBBY".
   test-data: |
     Нет данных
   steps:
@@ -946,7 +947,7 @@
   requirement: |
     Пользователь должен иметь возможность играть с любым человеком, с ботом или другом
   prerequisites:
-    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby (Current version: 68f356b). В таблице выбрана вкладка "HISTORY".
+    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby. В таблице выбрана вкладка "HISTORY".
   test-data: |
     Нет данных
   steps:
@@ -959,7 +960,7 @@
   requirement: |
     Пользователь должен иметь возможность играть с любым человеком, с ботом или другом
   prerequisites:
-    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby (Current version: 68f356b). В таблице выбрана вкладка "LOBBY".
+    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby. В таблице выбрана вкладка "LOBBY".
   test-data: |
     Нет данных
   steps:
@@ -972,7 +973,7 @@
   requirement: |
     В игре должен быть чат, в котором будут общаться зарегистрированные пользователи
   prerequisites:
-    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby (Current version: 68f356b).
+    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby
   test-data: |
     Нет данных
   steps:
@@ -986,7 +987,7 @@
   requirement: |
     В игре должен быть чат, в котором будут общаться зарегистрированные пользователи
   prerequisites:
-    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby (Current version: 68f356b).
+    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby
   test-data: |
     Нет данных
   steps:
@@ -999,7 +1000,7 @@
   requirement: |
     В игре должен быть чат, в котором будут общаться зарегистрированные пользователи
   prerequisites:
-    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby (Current version: 68f356b).
+    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby
   test-data: |
     Нет данных
   steps:
@@ -1013,7 +1014,7 @@
   requirement: |
     В игре должен быть чат, в котором будут общаться зарегистрированные пользователи
   prerequisites:
-    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby (Current version: 68f356b).
+    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby
   test-data: |
     Нет данных
   steps:
@@ -1026,7 +1027,7 @@
   requirement: |
     В игре должен быть чат, в котором будут общаться зарегистрированные пользователи
   prerequisites:
-    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby (Current version: 68f356b).
+    Пользователь авторизован. Открыта главная страница сайта https://codebattle.hexlet.io/#lobby
   test-data: |
     Нет данных
   steps:
@@ -1034,4 +1035,5 @@
     - В выпадающем списке выбираем любой чат отличный от текущего
   expected-result: |
     Открыт выбранный чат
+
 
