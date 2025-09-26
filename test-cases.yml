@@ -12,6 +12,49 @@
     Открыта страница регистрации
 
 - summary: |
+    Проверка успешной регистрации пользователя
+  requirement: |
+    Пользователь должен иметь возможность регистрации на сайте
+  prerequisites:
+    Открыта страница регистрации сайта https://codebattle.hexlet.io/users/new?locale=en&next=%2F
+  test-data: |
+    Nickname = chameleon Email = Ir4en-i@mail.ru Password = парапапапа! Password Confirmation = парапапапа!
+  steps:
+    - Вводим Nickname
+    - Вводим Email
+    - Вводим Password
+    - Вводим Password Confirmation
+    - Нажимаем кнопку «Submit»
+  expected-result: |
+    Пользователь зарегистрирован. Открывается лобби, в правом верхнем углу пользователь видит свой ник
+
+- summary: |
+    Проверка работы кнопки "Sign up with Github" на странице авторизации
+  requirement: |
+    Пользователь должен иметь возможность авторизации на сайте
+  prerequisites:
+    Открыта страница авторизации сайта https://codebattle.hexlet.io/session/new?locale=en&next=%2F
+  test-data: |
+    Нет данных
+  steps:
+    - Нажимаем на кнопку "Sign up with Github"
+  expected-result: |
+    Открыта страница авторизации в GitHub 
+
+- summary: |
+    Проверка работы кнопки "Sign up with Discord" на странице авторизации
+  requirement: |
+    Пользователь должен иметь возможность авторизации на сайте
+  prerequisites:
+    Открыта страница авторизации сайта https://codebattle.hexlet.io/session/new?locale=en&next=%2F
+  test-data: |
+    Нет данных
+  steps:
+    - Нажимаем на кнопку "Sign up with Discord"
+  expected-result: |
+    Открыта страница авторизации в Discord
+    
+- summary: |
     Проверка ошибки регистрации пользователя с уже существующими Nickname
   requirement: |
     Пользователь должен иметь возможность регистрации на сайте
@@ -97,49 +140,6 @@
     Пользователь должен получить сообщение об ошибке
 
 - summary: |
-    Проверка успешной регистрации пользователя
-  requirement: |
-    Пользователь должен иметь возможность регистрации на сайте
-  prerequisites:
-    Открыта страница регистрации сайта https://codebattle.hexlet.io/users/new?locale=en&next=%2F
-  test-data: |
-    Nickname = chameleon Email = Ir4en-i@mail.ru Password = парапапапа! Password Confirmation = парапапапа!
-  steps:
-    - Вводим Nickname
-    - Вводим Email
-    - Вводим Password
-    - Вводим Password Confirmation
-    - Нажимаем кнопку «Submit»
-  expected-result: |
-    Пользователь зарегистрирован
-
-- summary: |
-    Проверка работы кнопки "Sign up with Github" на странице авторизации
-  requirement: |
-    Пользователь должен иметь возможность авторизации на сайте
-  prerequisites:
-    Открыта страница авторизации сайта https://codebattle.hexlet.io/session/new?locale=en&next=%2F
-  test-data: |
-    Нет данных
-  steps:
-    - Нажимаем на кнопку "Sign up with Github"
-  expected-result: |
-    Открыта страница авторизации в GitHub 
-
-- summary: |
-    Проверка работы кнопки "Sign up with Discord" на странице авторизации
-  requirement: |
-    Пользователь должен иметь возможность авторизации на сайте
-  prerequisites:
-    Открыта страница авторизации сайта https://codebattle.hexlet.io/session/new?locale=en&next=%2F
-  test-data: |
-    Нет данных
-  steps:
-    - Нажимаем на кнопку "Sign up with Discord"
-  expected-result: |
-    Открыта страница авторизации в Discord
-
-- summary: |
     Проверка работы кнопки "Sing in" на главной странице сайта
   requirement: |
     Пользователь должен иметь возможность авторизации на сайте
@@ -151,36 +151,6 @@
     - Нажимаем на кнопку "Sign in"
   expected-result: |
     Открыта страница авторизации
-
-- summary: |
-    Проверка ошибки авторизации пользователя с неправильным Email
-  requirement: |
-    Пользователь должен иметь возможность авторизации на сайте
-  prerequisites:
-    Открыта страница авторизации сайта https://codebattle.hexlet.io/session/new?locale=en&next=%2F
-  test-data: |
-    Email = Gok@mail.ru Password = парапапапа!
-  steps:
-    - Вводим Email
-    - Вводим Password
-    - Нажимаем кнопку «Submit»
-  expected-result: |
-    Пользователь должен получить сообщение об ошибке
-
-- summary: |
-    Проверка ошибки авторизации пользователя с неправильным Password
-  requirement: |
-    Пользователь должен иметь возможность авторизации на сайте
-  prerequisites:
-    Открыта страница авторизации сайта https://codebattle.hexlet.io/session/new?locale=en&next=%2F
-  test-data: |
-    Email = Ir4en-i@mail.ru Password = парапапапа@
-  steps:
-    - Вводим Email
-    - Вводим Password
-    - Нажимаем кнопку «Submit»
-  expected-result: |
-    Пользователь должен получить сообщение об ошибке
 
 - summary: |
     Проверка успешной авторизации пользователя
@@ -222,6 +192,36 @@
     - Нажимаем на кнопку "Sign in with Discord"
   expected-result: |
     Выполнена авторизация на Codebattle 
+    
+- summary: |
+    Проверка ошибки авторизации пользователя с неправильным Email
+  requirement: |
+    Пользователь должен иметь возможность авторизации на сайте
+  prerequisites:
+    Открыта страница авторизации сайта https://codebattle.hexlet.io/session/new?locale=en&next=%2F
+  test-data: |
+    Email = Gok@mail.ru Password = парапапапа!
+  steps:
+    - Вводим Email
+    - Вводим Password
+    - Нажимаем кнопку «Submit»
+  expected-result: |
+    Пользователь должен получить сообщение об ошибке
+
+- summary: |
+    Проверка ошибки авторизации пользователя с неправильным Password
+  requirement: |
+    Пользователь должен иметь возможность авторизации на сайте
+  prerequisites:
+    Открыта страница авторизации сайта https://codebattle.hexlet.io/session/new?locale=en&next=%2F
+  test-data: |
+    Email = Ir4en-i@mail.ru Password = парапапапа@
+  steps:
+    - Вводим Email
+    - Вводим Password
+    - Нажимаем кнопку «Submit»
+  expected-result: |
+    Пользователь должен получить сообщение об ошибке
 
 - summary: |
     Проверка работы логотипа профиля игрока
@@ -1035,5 +1035,6 @@
     - В выпадающем списке выбираем любой чат отличный от текущего
   expected-result: |
     Открыт выбранный чат
+
 
 
