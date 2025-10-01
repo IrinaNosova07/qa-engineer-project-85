@@ -3,6 +3,18 @@
   status: pass
 
 - summary: |
+    Проверка успешной регистрации пользователя
+  status: pass
+
+- summary: |
+    Проверка работы кнопки "Sign up with Github" на странице авторизации
+  status: pass
+
+- summary: |
+    Проверка работы кнопки "Sign up with Discord" на странице авторизации
+  status: fail
+
+- summary: |
     Проверка ошибки регистрации пользователя с уже существующими Nickname
   status: pass
 
@@ -23,20 +35,20 @@
   status: pass
 
 - summary: |
-    Проверка успешной регистрации пользователя
-  status: pass
-
-- summary: |
-    Проверка работы кнопки "Sign up with Github" на странице авторизации
-  status: pass
-
-- summary: |
-    Проверка работы кнопки "Sign up with Discord" на странице авторизации
-  status: fail
-
-- summary: |
     Проверка работы кнопки "Sing in" на главной странице сайта
   status: pass
+
+- summary: |
+    Проверка успешной авторизации пользователя
+  status: pass
+  
+- summary: |
+    Проверка работы кнопки "Sign in with Github" на странице авторизации (при наличии аккаунта)
+  status: pass
+
+- summary: |
+    Проверка работы кнопки "Sign in with Discord" на странице авторизации (при наличии аккаунта)
+  status: fail
 
 - summary: |
     Проверка ошибки авторизации пользователя с неправильным Email
@@ -45,18 +57,6 @@
 - summary: |
     Проверка ошибки авторизации пользователя с неправильным Password
   status: pass
-
-- summary: |
-    Проверка успешной авторизации пользователя
-  status: pass
-
-- summary: |
-    Проверка работы кнопки "Sign in with Github" на странице авторизации (при наличии аккаунта)
-  status: pass
-
-- summary: |
-    Проверка работы кнопки "Sign in with Discord" на странице авторизации (при наличии аккаунта)
-  status: fail
 
 - summary: |
     Проверка работы логотипа профиля игрока
@@ -78,6 +78,38 @@
     Проверка работы "Settings" в выпадающем списке
   status: pass
 
+- summary: |
+    Проверка возможности пользователя изменять "Your name" в "Settings"
+  status: pass
+
+- summary: |
+    Проверка ошибки при попытке ввода некорректного "Your name" в "Settings" (ввод цифр)
+  status: pass
+
+- summary: |
+    Проверка ошибки при попытке ввода некорректного "Your name" в "Settings" (ввод меньше 3 допустимых символов)
+  status: pass
+
+- summary: |
+    Проверка ошибки при попытке ввода некорректного "Your name" в "Settings" (ввод букв на русском языке)
+  status: pass
+  
+- summary: |
+    Проверка возможности пользователя изменять "Your weapon" в "Settings"
+  status: pass
+  
+- summary: |
+    Проверка возможности пользователя создавать "Your clan" в "Settings"
+  status: pass
+
+- summary: |
+    Проверка возможности пользователя выхода из клана
+  status: pass
+
+- summary: |
+    Проверка возможности пользователя вступить в клан, созданный другим пользователем
+  status: pass
+      
 - summary: |
     Проверка работы "Users rating" в выпадающем списке
   status: pass
@@ -281,6 +313,7 @@
 - summary: |
     Проверка работы кнопки переключения чата
   status: pass
+
 
 
 
